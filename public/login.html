@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Banco de Sangre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>🩸 Iniciar Sesión</h2>
+        <p>Sistema de Gestión de Banco de Sangre</p>
+        
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="nombre_usuario">Usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <p>¿Nuevo personal? <a href="/registro.html">Regístrate aquí</a></p>
+    </div>
+</body>
+</html>

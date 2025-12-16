@@ -1,0 +1,141 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    /* CLAVE: Usamos min-height en lugar de height fijo para permitir scroll */
+    min-height: 100vh;
+    /* Quitamos display:flex del body para que no obligue a centrar todo verticalmente y cortar el inventario */
+}
+
+/* --- TÍTULOS --- */
+h1, h2, h3 {
+    color: #d9534f; /* Rojo institucional */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- DISEÑO DE CUADROS (LOGIN Y FORMULARIOS) --- */
+/* Este estilo mantiene el diseño de "tarjeta" o "cuadro" que te gustaba */
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para que se vea como cajita */
+    text-align: center;
+    border-top: 5px solid #d9534f;
+    
+    /* CENTRADO: Esto centra el cuadro y permite bajar si la pantalla es muy chica */
+    margin: 50px auto; 
+}
+
+/* --- CARTAS DEL MENÚ PRINCIPAL --- */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* --- TABLAS (INVENTARIO Y LISTAS) --- */
+table {
+    width: 100%;
+    max-width: 1000px; /* Que no se estire demasiado en pantallas gigantes */
+    border-collapse: collapse;
+    margin: 20px auto; /* Centrada */
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9534f;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* --- ALERTAS (ESTILOS VISUALES) --- */
+/* Para que las alertas de caducidad se vean bonitas y ordenadas */
+div[style*="background: #ffcccb"], 
+div[style*="background: #ffe6e6"], 
+div[style*="background: #fff3cd"] {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* --- INPUTS Y BOTONES --- */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+/* --- BOTONES DE ENLACE --- */
+a { color: #d9534f; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.btn, .btn-sec, .btn-dark, .btn-add, .btn-back {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-add { background: #28a745; }
+.btn-back { background: #6c757d; }
+.btn-add:hover, .btn-back:hover { opacity: 0.9; text-decoration: none; }
